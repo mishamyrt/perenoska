@@ -1,0 +1,22 @@
+{
+  "name": "mishamyrt-perenoska",
+  "version": "1.0.0",
+  "description": "Automatic hyphenation for Russian",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishamyrt/perenoska.git"
+  },
+  "keywords": [
+    "hyphenation"
+  ],
+  "author": "mishamyrt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mishamyrt/perenoska/issues"
+  },
+  "homepage": "https://github.com/mishamyrt/perenoska#readme"
+}
