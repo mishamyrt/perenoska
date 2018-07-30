@@ -1,4 +1,4 @@
-export default (inputText) => {
+module.exports = (inputText, minimum = 3) => {
     const RusA = '[абвгдеёжзийклмнопрстуфхцчшщъыьэюя]'
     const RusV = '[аеёиоуыэю\я]'
     const RusN = '[бвгджзклмнпрстфхцчшщ]'
@@ -11,8 +11,7 @@ export default (inputText) => {
         new RegExp('(' + RusN + RusV + ')(' + RusN + RusV + ')', 'ig'),
         new RegExp('(' + RusV + RusN + ')(' + RusN + RusN + RusV + ')', 'ig'),
         new RegExp('(' + RusV + RusN + RusN + ')(' + RusN + RusN + RusV + ')', 'ig'),
-        new RegExp('(' + RusA + '{1,5})' + Hyphen + '(' + RusA + '+)', 'ig')
-
+        new RegExp('(' + RusA + '{1,' + minimum +'})' + Hyphen + '(' + RusA + '+)', 'ig')
     ]
     let outputText = inputText
     for (let i = 0; i < 5; i++) {
