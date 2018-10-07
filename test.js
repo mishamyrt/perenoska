@@ -9,6 +9,8 @@ text = text.replace(new RegExp("\xAD",'ig'), '-')
 
 if (text === answer) {
     console.log('Passed!');
+    process.exit(0);
 } else {
     console.log('Not Passed!');
+    process.exit(1);
 }
